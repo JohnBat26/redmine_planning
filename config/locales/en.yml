@@ -1,5 +1,7 @@
 ---
 en:
+  planning_menu_label: "Plan"
+  planning_head_planning: "Plan"
   planning:
     head_planning: "Planning"
     label_planning: "Plan projects"

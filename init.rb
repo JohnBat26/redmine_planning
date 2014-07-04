@@ -118,5 +118,5 @@ Redmine::Plugin.register :redmine_planning do
     },
     :partial => 'planning/planning_settings';
 
-  menu :project_menu, :redmine_planning, { :controller => :planning, :action => :show }, :caption => 'Plan', :after => :gantt, :param => :project_id
+  menu :project_menu, :redmine_planning, { :controller => :planning, :action => :show }, :caption => :planning_menu_label, :after => :gantt, :param => :project_id
 end
