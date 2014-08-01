@@ -34,17 +34,111 @@ svg text
     user-select: none;
 }
 
+div#planning_list
+{
+    overflow:           hidden;
+}
+
+div#planning_list .table
+{
+    position:           relative;
+    overflow:           scroll;
+    width:              100%;
+    height:             100%;
+}
+
+div#planning_list .ui-resizable-e
+{
+    background-color:   transparent;
+    width:              8px;
+}
+
+
+div #planning_list .planning_list_row_container
+{
+}
+
+div#planning_list .planning_issue
+{
+    position:               absolute;
+    width:                  500px;
+    -webkit-touch-callout:  none;
+    -webkit-user-select:    none;
+    -khtml-user-select:     none;
+    -moz-user-select:       none;
+    -ms-user-select:        none;
+    user-select:            none;
+    cursor:                 context-menu;
+}
+
+div#planning_list .planning_issue_column
+{
+    display:            inline-block;
+    white-space:        nowrap; 
+    border-top:         1px solid #aaa;
+    border-left:        1px solid #aaa;
+    margin:             0;
+    padding:            1px;
+    overflow:           hidden;
+    vertical-align:     middle;
+    z-index:            101;
+}
+
+div#planning_list .planning_issue_column:last-child
+{
+    border-right:       1px solid #aaa;
+}
+
+div#planning_list .planning_issue:last-child .planning_issue_column
+{
+    border-bottom:      1px solid #aaa;
+}
+
+div#planning_list .planning_issue_column.issue_id
+{
+    width:              30px;
+    text-align:         right;
+}
+
+div#planning_list .planning_issue_column.issue_tracker
+{
+    width:              50px;
+}
+
+div#planning_list .planning_issue_column.issue_name
+{
+    width:              200px;
+}
+
+div#planning_list .planning_issue_column.issue_start
+{
+    width:              80px;
+}
+
+div#planning_list .planning_issue_column.issue_due
+{
+    width:              80px;
+}
+
+
 div.planning_tooltip
 {
     position:           absolute;
     border:             thin solid #aa0;
     border-radius:      3px;
+    overflow-x:         hidden;
+    overflow-y:         auto;
+    max-height:         300px;
     background-color:   #fff;
     padding:            5;
     font-size:          8pt;
     width:              400px;
     z-index:            100;
     padding:            5px;
+
+    -moz-hyphens:       auto;
+    -webkit-hyphens:    auto;
+    hyphens:            auto;
 }
 
 div.planning_tooltip table
